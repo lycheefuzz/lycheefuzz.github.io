@@ -1,1 +1,41 @@
 
+/* STYLESHEET TXT FILE TO MAKE GROUP CHANGES */
+/* WE CAN ALL AGREE ON A COLOR FOR THE PAGE. LAVENDER IS JUST TEMPORARY COLOR */
+body{
+    background-color: lavender;
+}
+
+
+/* CURRENTLY THIS ONLY AFFECTS THE TWO LINES ON MY SECION. 
+WE CAN DECIDE AS A TEAM WHAT COLOR/STYLE WE WANT AS A HEADING <h1>,<h2>, etc. */
+h6 {
+    color: rebeccapurple;
+}
+p13 {
+    color: violet;
+}
+/*This is where Rina's work ends. :) */
+
+/* This is where Nina's work starts! uwu */
+/* this is my specific tag */
+
+h7 {
+    color:#ff99cc;
+}
+
+
+/* This is where Nina's work ends! UWU */
+
+/* This is where Trevor's work Starts! ;) */
+h8{
+    color:palegoldenrod
+    
+}
+/* This is where Trevor's work Ends! ;) */
+
+
+/* This is where Xinyu's work Starts!*/
+h4{
+    color:#00fff;
+}
+/* This is where Xinyu's work end.*/
