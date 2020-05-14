@@ -8,8 +8,13 @@
  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  
-<!-- Bootstrap CSS -->
+<!--Nina: Bootstrap CSS + JS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- End Bootstrap Essentials -->
 
 <!--Nina: added <link rel="" and <style> to h1 in <head> tag; please feel free to edit if you want! :) 
     I added Rina's <link rel="" to the top. -->
@@ -19,16 +24,32 @@
 /*Nina: "Specific Tag" requirement = please feel free to edit/add more to the page. uwu 
  Trevor: style tag added to h2 and #myheader
  Trevor: added text manipulation, position and alignment of elements and hover tag */
+
+body{
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
 h1 {color:#cc0099} 
-h2.intro:hover {color:aqua;
-  font-weight: bold;
+
+h2.intro:hover {
+    color:aqua;
+    font-weight: bold;
     font-size: large;
     font-stretch: expanded;
     position: fixed;
-        bottom:30px;
-        background-color:#000;
-        color:#fff;}
-#myheader{color:salmon}
+    bottom:30px;
+    background-color:#000;
+    color:#fff;}
+
+#myheader{color:salmon} 
+
+/*Nina: Added this to give our rows some ~flavor!~ Feel free to edit. */
+.row {
+    margin: 10px;
+    background:#fff;
+    border-radius: 10px;
+    padding: 10px;
+    color:#000;}
+
 </style>   
 <title>Xcom for 10 dollars? nah</title>
 </head>
@@ -127,28 +148,32 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
     }   
     </style>
 
+    <div class="container-fluid text-white" style="margin-top:70px">
+
+        <div class="row">
+         <div class="col">
     <!--Added headings! <h1> and <h2>-->
     <h1>Nina's first heading.</h1>
     <p>Woah! look at that. My first paragraph!</p>
 
     <!--Added color and !! <style> attribute :) !!-->
-    <h2 style="color:Violet;">And my second heading has color!</h2>
+    <h2 style="color:#ff99cc">And my second heading has color!</h2>
     <p>ain't she cute? ^^ We learning.</p>
 
-    <!--Added <div> and a box. :D-->
-    <div style="background-color:violet">
-    <h3>and now we have a pretty pink box. :)</h3> 
-        <p>So rad!</p>
-    </div>
 
     <!--Added <span>, <strong>, <em>, and <div> :: about pink, my fave color-->
-    <p>Can you tell what my favorite<span style="color:violet"> color </span>is? Probably not.<br>
+    <p>Can you tell what my favorite<span style="color:#ff99cc"> color </span>is? Probably not.<br>
     <strong>I used to be one of those gorls who swore against pink, and now I am in love with it.</strong><br>
     <em>Tragic, no? I could have been loving pink my whole life.</em></p> 
 
+    </div>
+    </div>
+
     <!--Added <table> :: about ...rad..ness? idk. -->
-    <div class="container p-3 my-3 border">  
-       <strong style="color:#ff99cc">Table time! ~ <br></strong><br>
+        <div class="row">
+        <div class="col">
+
+        <strong style="color:#ff99cc">Table time! ~ <br></strong><br>
 
         <table style="width:20%">
         <tr>
@@ -163,9 +188,9 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
         </tr>
         </table>
         <br><p style="color: #ff99cc;"><em>Table time over!</em> I enjoyed that!</p>
-    </div>
 
-<div>
+        </div>
+        </div>
 
     <!--Added lists! <ol> and <ul> :: About Video Games.-->
     <strong>Next: Here is a list of some of my favorite video games.</strong><br>
@@ -176,16 +201,16 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
     <li>Taiko no Tatsujin</li>
     <li>The Rhythm Heaven Series</li>
 </ul>
-</div>
 
-<div>
+
+
     <strong>Okay, now I will rank them from best to worst!</strong>
 <ol>
     <li>...</li>
     <li>Just kidding.</li>
     <li>This is too difficult for me. :(</li>
 </ol>
-</div>
+
 
 <hr>
 <!--Added <img> :: About openin' up that dang pit. !! Also played with text-align/position + font-size. !! -->
@@ -229,6 +254,8 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
 
 <!--Thank you message. :)-->
 <p style="color:violet">Thank you! See you soon! ~ Nina P. :3</p>
+
+</div>
 
 <!--And this is where Nina's work ends. :)-->
 
@@ -522,12 +549,6 @@ Trevor added class tag 'intro' to h2 as well as adding id tag to p -->
 <p>Enjoyed the pictures? Learn fun facts about The Office!</p>
 <a href="https://www.youtube.com/watch?v=3nxuoXuKkuc">Click here for YouTube video!</a>
 
-  <!-- Optional JavaScript -->
-   
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </body>
 </html>
