@@ -555,80 +555,89 @@ But, I'm sentimental. So, I'm keeping it in here.-->
 <hr>
 
 <!-- Headings -->
-<h1>RINA'S FIRST HEADING</h1>
-<p>woah so dramatic, let's tone it down with the next one</p>
-<h2>Rina's second heading</h2>
-<p>much better :)</p>
+<div class="row">
+  <div class="col">
+  <h1>RINA'S FIRST HEADING</h1>
+    <p>woah so dramatic, let's tone it down with the next one</p>
+  <h2>Rina's second heading</h2>
+    <p>much better :)</p>
 
-<!-- Colors -->
-<h3 style = "color:white" > Rina's third heading</h3>
-<p> can you see it? prolly not cause it blends in with the background</p>
+    <!-- Colors -->
+    <h3 style = "color:white" > Rina's third heading</h3>
+    <p> can you see it? prolly not cause it blends in with the background</p>
 
-<!-- Add <div> and color to the box-->
-    <!--INSTR: Don't forget to put "quote" marks around attribute values!-->
-<div style=background-color:black>
-<h3 style = "color:white"> Rina's fourth heading</h3>
-<p> yay! you can prolly see it now!</p>
+    <!-- Add <div> and color to the box-->
+        <!--INSTR: Don't forget to put "quote" marks around attribute values!-->
+    <div style=background-color:black>
+      <h3 style = "color:white"> Rina's fourth heading</h3>
+        <p> yay! you can prolly see it now!</p>
+    </div>
+
+  <!-- Span -->
+
+  <p>My favorite color is...
+      <!--INSTR: see above-->
+      <div style=background-color:black>
+          <span style = "color:white"> white </span> 
+      </div> 
+  </p>
+  
+  <!-- Strong -->
+  <p><strong>Alot of people say white is not a color and its a shade.</strong></p>
+
+  <!-- Emphasized <em> -->
+  <p><em>Should I have a backup favorite color?</em></p>
+  </div>
 </div>
 
-<!-- Span -->
-
-<p>My favorite color is...
-    <!--INSTR: see above-->
-    <div style=background-color:black>
-        <span style = "color:white"> white </span> 
-    </div> 
-</p>
- 
-<!-- Strong -->
-<p><strong>Alot of people say white is not a color and its a shade.</strong></p>
-
-<!-- Emphasized <em> -->
-<p><em>Should I have a backup favorite color?</em></p>
 
 <!-- Table -->
-<table style="width:30%">
-    <tr>
-        <th>Corgi</th>
-        <th>Shiba</th>
-    </tr>
-    <tr>
-        <td>which one is cuter?</td>
-        <td>can you decide?</td>
-        <td>it will be difficult</td>
-    </tr>
-</table>
+<div class="row">
+  <div class="col">
+  <table style="width:30%">
+      <tr>
+          <th>Corgi</th>
+          <th>Shiba</th>
+      </tr>
+      <tr>
+          <td>which one is cuter?</td>
+          <td>can you decide?</td>
+          <td>it will be difficult</td>
+      </tr>
+  </table>
 
 <!-- Lists <ol> ordered as in with numbers list <ul> unordered as in just bullets no numbers -->
 
-<div>
-<p><strong>Let's Compare</strong></p>
+  <div>
+  <p><strong>Let's Compare</strong></p>
 
-<p>Corgi</p>
-<ol>
-    <li>Corgis have stubby legs</li>
-    <li>Corgis have cute butt</li>
-    <li>Corgis have short tail</li>
-</ol>
+  <p>Corgi</p>
+  <ol>
+      <li>Corgis have stubby legs</li>
+      <li>Corgis have cute butt</li>
+      <li>Corgis have short tail</li>
+  </ol>
 
-<p>Shiba</p>
-<ul>
-    <li>Shibas have curly tail</li>
-    <li>Shibas have normal legs</li>
-    <li>Shibas have fox like face</li>
-</ul>
+  <p>Shiba</p>
+  <ul>
+      <li>Shibas have curly tail</li>
+      <li>Shibas have normal legs</li>
+      <li>Shibas have fox like face</li>
+  </ul>
+  </div>
+
+  <!-- Picture-->
+  <p>Now look at them pics</p>
+  <img src="https://i.redd.it/b2tbkms7r1hx.png" alt= "corgi and shiba" width="300">
+  </div>
 </div>
-
-<!-- Picture-->
-<p>Now look at them pics</p>
-<img src="https://i.redd.it/b2tbkms7r1hx.png" alt= "corgi and shiba" width="300">
-
-
 
 <!-- THIS IS HTML + CSS PRACTICE-->
 <!-- <link rel""> and <head>-->
-<h1>Now for some CSS Practice...</h1>
-<h2>1) Using: externally linked stylesheet text file titled "styles.css"</h2>
+<div class="row">
+  <div class="col">
+    <h1>Now for some CSS Practice...</h1>
+    <h2>1) Using: externally linked stylesheet text file titled "styles.css"</h2>
 
 <!--Hi! Nina here! :) I think that there should only be one <head> tag per page, but I'm asking on Slack to make sure. :D 
     I will edit if I am incorrect. For now, I have added your work to the top <head> tag. :) 
@@ -639,18 +648,20 @@ But, I'm sentimental. So, I'm keeping it in here.-->
 
 <!--That's correct. BUT ALSO, there should only be ONE <body> tag as well... so delete this extra one below.-->
 
-<body>
-<h6>This is the 6th Heading. 
-    As you can see, the size is much smaller than the 1st and 2nd Heading...</h6>
+    <body>
+    <h6>This is the 6th Heading. 
+        As you can see, the size is much smaller than the 1st and 2nd Heading...</h6>
 
-<p13>This is the 13th paragraph. 
-    No changes to the size has been made. 
-    But the color is different</p13>
+      <p13>This is the 13th paragraph. 
+            No changes to the size has been made. 
+            But the color is different</p13>
 
-<h2>2) Using: id="" and .class and various style changes</h2>
+    <h2>2) Using: id="" and .class and various style changes</h2>
+  </div>
+</div>
+
 <!-- id="" and class="" and .class practice-->
 <!--(this isn't in the external stylesheet)-->
-
 <style>
 #rinaHeader {
     background-color:black;
@@ -674,12 +685,16 @@ But, I'm sentimental. So, I'm keeping it in here.-->
 <!--INSTR: YES! Classes for categories of elements that you want to lump together and style. IDs for unique elements that you need to refer to or treat special. Later, in javascript, you'll refer to ID to tell a function which element to change.-->
 
 <!-- This is where you have multiple similar elements using the class-->
-<h2 class="rinaClass">Matcha</h2>
-<p>Nana's Green Tea Cafe is her current favorite.</p>
-<h2 class="rinaClass">Korean Fried Chicken (KFC)</h2>
-<p>Von's Chicken in Federal Way is her go to</p>
-<h2 class="rinaClass">The Office</h2>
-<p>Current favorite quotes</p>
+<div class="row">
+  <div class="col">
+    <h2 class="rinaClass">Matcha</h2>
+      <p>Nana's Green Tea Cafe is her current favorite.</p>
+    <h2 class="rinaClass">Korean Fried Chicken (KFC)</h2>
+      <p>Von's Chicken in Federal Way is her go to</p>
+    <h2 class="rinaClass">The Office</h2>
+      <p>Current favorite quotes</p>
+  </div>
+</div>
 
 
 <!--Applying manipulation to images to each one-->
