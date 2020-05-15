@@ -574,7 +574,6 @@ But, I'm sentimental. So, I'm keeping it in here.-->
     </div>
 
   <!-- Span -->
-
   <p>My favorite color is...
       <!--INSTR: see above-->
       <div style=background-color:black>
@@ -584,9 +583,13 @@ But, I'm sentimental. So, I'm keeping it in here.-->
   
   <!-- Strong -->
   <p><strong>Alot of people say white is not a color and its a shade.</strong></p>
-
   <!-- Emphasized <em> -->
   <p><em>Should I have a backup favorite color?</em></p>
+
+<!--Bootstrap Practice: Buttons)-->
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">YES</a>
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">NO</a>
+  <a href="https://www.youtube.com/watch?v=5K6foouoB-M" class="btn btn-dark" role="button">I DONT CARE</a>
   </div>
 </div>
 
@@ -701,23 +704,52 @@ But, I'm sentimental. So, I'm keeping it in here.-->
 <!--INSTR: The interesting thing here is that the class column specifies a width of 33.3% but the inline styles applied to these <div> tags override that so that they're 100%. I don't know if this was intentional, and I'm not sure if you meant for there to be four columns with images in them so that you'd get four images side-by-side?-->
 <div class="row">
     <div class="column">
-        <img src="https://i.redd.it/s6hdwntp7a701.jpg" alt="Michael quote" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://66.media.tumblr.com/c21cd21bacdb0fbd11ed5d2b8298ea1a/tumblr_nc888kXABO1qki66fo1_1280.png" alt="Creed quote" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://i.pinimg.com/736x/02/1a/da/021ada6e80cbe82e90b7838c7a1ab5cc.jpg" alt="Dwight quote" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="https://i.redd.it/6tzq890byly01.jpg" alt="Kevin quote" style="width:100%">
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!--Bootstrap: Added an image carousel! W3Schools carried me on this one. But, I learned a lot!-->
+        
+            <!-- Indicators - from W3Schools -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            
+            <!-- The slideshow - from W3Schools -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.redd.it/s6hdwntp7a701.jpg" alt="Michael quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://66.media.tumblr.com/c21cd21bacdb0fbd11ed5d2b8298ea1a/tumblr_nc888kXABO1qki66fo1_1280.png" alt="Creed quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/02/1a/da/021ada6e80cbe82e90b7838c7a1ab5cc.jpg" alt="Dwight quote" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.redd.it/6tzq890byly01.jpg" alt="Kevin quote" style="width:100%">
+              </div>
+            </div>
+            
+            <!-- Left and right controls - from W3Schools -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
     </div>
 </div>
 
-<!--Adding link and hover/visibilty changes  -->
-<p>Enjoyed the pictures? Learn fun facts about The Office!</p>
-<a href="https://www.youtube.com/watch?v=3nxuoXuKkuc">Click here for YouTube video!</a>
-
+<div class="row">
+  <div class="column">
+  <!--Adding link and hover/visibilty changes  -->
+  <p>Enjoyed the pictures? Learn fun facts about The Office!</p>
+  <a href="https://www.youtube.com/watch?v=3nxuoXuKkuc">Click here for YouTube video!</a>
+  </div>
+</div>
 
 </body>
 </html>
